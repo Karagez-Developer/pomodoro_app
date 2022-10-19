@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pomodoro app</title>
+</head>
+<body>
+    <h1 class="pomodoro-h1">Productive time</h1>
+    <div class="pomodoro-container">
+        <div class="pomodoro-section">
+            <h2 class="pomodoro-h2">You can choose the time of work and break</h2>
+            <h3 class="pomodoro-h3 work-h3">The work time</h3>
+            <select name="work" id="work-time" class="select-time">
+                <option value="25 minutes - standart time">25 minutes - standart time</option>
+                <option value="45 minutes - increased time">45 minutes - increased time</option>
+            </select>
+            <h3 class="pomodoro-h3 break-h3">The break time</h3>
+            <select name="work" id="break-time" class="select-time">
+                <option value="5 minutes">5 minutes - short break</option>
+                <option value="10 minutes">10 minutes - optimal break</option>
+            </select>
+        </div>
+        <div class="pomodoro-section">
+            <h2 class="pomodoro-h2">Pomodoro timer</h2>
+            <div class="circle-container">
+                <div class="circular">
+                    <div class="inner"></div>
+                    <div class="number">25:00</div>
+                    <div class="circle">
+                        <div class="bar left">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar right">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-container">
+                <img src="img/continue.png" alt="player" class="icon-player" id="start-btn">
+                <img src="img/skip.png" alt="player" class="icon-player" id="skip-btn">
+                <img src="img/stop.png" alt="player" class="icon-player" id="stop-btn">
+            </div>
+
+        </div>
+        <div class="pomodoro-section">
+            <h2 class="pomodoro-h2">You can on/off the music</h2>
+            <div class="switch">
+                <input type="checkbox">
+                <audio class="song" data-src="./audio/chill.mp3">
+                    <source src="./audio/chill.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
